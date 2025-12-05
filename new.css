@@ -45,7 +45,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 3.5em;
+  font-size: clamp(2em, 5vw, 3.5em);
   font-weight: 900;
   color: #0f2637;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
@@ -53,21 +53,21 @@ h1 {
 }
 
 h2 {
-  font-size: 2em;
+  font-size: clamp(1.5em, 3vw, 2em);
   font-weight: 700;
   color: #2c5f8d;
   font-style: italic;
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: clamp(1.2em, 2.5vw, 1.5em);
   font-weight: 700;
   color: #4a7a9e;
   margin-bottom: 25px;
 }
 
 p {
-  font-size: 1.1em;
+  font-size: clamp(0.95em, 2vw, 1.1em);
   line-height: 1.8;
   color: #444;
   margin-bottom: 30px;
@@ -77,14 +77,20 @@ p {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+.contact-info {
+  font-size: 0.9em;
+  padding: 10px;
+  background-color: transparent;
+  box-shadow: none;
+  margin-bottom: 10px;
+}
+
 img {
-  display: block; 
+  display: block;
   margin: 30px auto;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  max-width: 100%;
-  height: auto;
 }
 
 img:hover {
